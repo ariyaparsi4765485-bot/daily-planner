@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "IRANSans";
+    src: local("IRANSans");
+    font-display: swap;
+}
+
+:root {
+    font-family: "IRANSans", Tahoma, Arial, sans-serif;
+    color: #f8fafc;
+    background: #011c16;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    direction: rtl;
+    background: #011c16;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 35%), radial-gradient(circle at bottom left, rgba(212, 175, 55, 0.08), transparent 30%), #011c16;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #022c22;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #047857;
+    border-radius: 20px;
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(6, 78, 59, 0.72), rgba(2, 44, 34, 0.58));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.gold-text {
+    background: linear-gradient(90deg, #fcd34d, #d4af37, #f59e0b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.progress-bar {
+    transition: width 700ms ease;
+}
+
+input[type="range"] {
+    accent-color: #d4af37;
+}
